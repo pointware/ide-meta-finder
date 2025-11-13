@@ -12,4 +12,14 @@
         <toolWindow factoryClass="com.github.pointware.idemetafinder.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
         <postStartupActivity implementation="com.github.pointware.idemetafinder.startup.MyProjectActivity" />
     </extensions>
+
+    <actions>
+        <action id="com.github.pointware.idemetafinder.TextSearchAction"
+                class="com.github.pointware.idemetafinder.actions.TextSearchAction"
+                text="텍스트 검색"
+                description="프로젝트에서 텍스트를 검색합니다">
+            <add-to-group group-id="EditMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt F"/>
+        </action>
+    </actions>
 </idea-plugin>
